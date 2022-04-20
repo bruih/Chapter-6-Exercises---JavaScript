@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 6 | Game with JavaScript</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" type="module"></script> <!--module type is used here to export related functions in/out of the script files.-->
+</head>
+<body>
+  <div class="world" classNameWorld> <!--game container for all the objects in games-->
+
+<!--text score-->
+    <p>Score:</p>
+    <div class="score" classNameScore></div>
+<!--###############################################################################---->
+
+<!--text screen---->
+    <div class="start-screen" classNameStart>Press Any Key To Start</div>
+    <div class="lose-screen " classNameLose>GAME OVER<br><i class="fa fa-refresh fa-spin"></i></div>
+<!--###############################################################################---->
+
+<!--game objects---->
+    <div class="sky">              </div>
+    <img src="objectImg/background.jpg" class="floor" classNameFloor>
+    <img src="objectImg/background.jpg" class="floor" classNameFloor>
+    <img src="objectImg/rock.jpg" class="rock" classNameRock>
+    <img src="objectImg/rock.jpg" class="rock" classNameRock>
+    <img src="objectImg/qiqistand.jpg" class="qiqiChar" classNameQiqi>
+<!--###############################################################################---->
+
+<!--sound sfx---->
+    <audio id="loseaudio" src="audio/lose.mp3" onclick="playLoseAudio()" loop></audio>
+    <audio id="bgmaudio" src="audio/bgm.mp3" onclick="playBGM()" loop></audio>
+<!--###############################################################################---->
+
+<!--for sound effect of char jumping-->
+    <audio id="sound1" src="audio/qiqisfx.mp3">
+    <audio id="sound2" src="audio/qiqisfx2.mp3">
+    <audio id="sound3" src="audio/qiqisfx3.mp3">
+<!--###############################################################################---->
+</div>
+</body>
+</html> 
